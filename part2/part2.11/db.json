@@ -1,0 +1,24 @@
+{
+  "human":[
+    { 
+      "name": "Peter", 
+      "number": "123456",
+      "id": 1
+    },
+    { 
+      "name": "Adam", 
+      "number": "5323523",
+      "id": 2
+    },
+    { 
+      "name": "Daniel", 
+      "number": "234345",
+      "id": 3
+    },
+    { 
+      "name": "Mary", 
+      "number": "6423122",
+      "id": 4
+    }
+  ]
+}
