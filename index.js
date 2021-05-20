@@ -1,10 +1,17 @@
-const app = require('./app') // the actual Express application
+
 const http = require('http')
-const config = require('./utils/config')
-const logger = require('./utils/logger')
-
-const server = http.createServer(app)
-
-server.listen(config.PORT, () => {
-  logger.info(`Server running on port ${config.PORT}`)
-})
+let notes = [
+{
+    title: "Canonical string reduction",
+    author: "Edsger W. Dijkstra",
+    likes: 12
+  }
+]
+  const app = http.createServer((request, response) => {
+    response.writeHead(200, { 'Content-Type': 'application/json' })
+    response.end(JSON.stringify(notes))
+  })
+  
+  const PORT = 3004
+  app.listen(PORT)
+  console.log(`Server running on port ${PORT}`)
