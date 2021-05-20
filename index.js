@@ -2,9 +2,9 @@
 const http = require('http')
 let notes = [
 {
-    title: "Canonical string reduction",
-    author: "Edsger W. Dijkstra",
-    likes: 12
+   
+  author: "Robert C. Martin",
+  blogs: 3
   }
 ]
   const app = http.createServer((request, response) => {
@@ -12,6 +12,6 @@ let notes = [
     response.end(JSON.stringify(notes))
   })
   
-  const PORT = 3004
+  const PORT = 3005
   app.listen(PORT)
   console.log(`Server running on port ${PORT}`)
